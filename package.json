@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce-website",
+  "version": "1.0.0",
+  "description": "Mern ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santohack/Ecommerce-website.git"
+  },
+  "author": "Santohack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Santohack/Ecommerce-website/issues"
+  },
+  "homepage": "https://github.com/Santohack/Ecommerce-website#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
