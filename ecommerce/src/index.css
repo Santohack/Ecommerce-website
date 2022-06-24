@@ -7,3 +7,10 @@ main{
 .text-center.py-3.col {
     font-size: smaller;
 }
+h3{
+    padding: 1rem;
+}
+button.btn.btn-dark.btn.btn-primary {
+
+    margin-left: 107px;
+}
