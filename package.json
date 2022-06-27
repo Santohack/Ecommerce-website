@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Backend/server.js"
+    "start": "node Backend/server.js",
+    "server": "nodemon Backend/server.js",
+    "client": "npm start --prefix ecommerce",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,9 @@
   "dependencies": {
     "axios": "^0.27.2",
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.18"
   }
 }
