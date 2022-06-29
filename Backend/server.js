@@ -1,7 +1,14 @@
-const express = require("express");
+import dotenv from "dotenv";
+import express from "express";
+import products from "./data/Products.js";
+
 const app = express();
-const products = require("./data/products");
-app.listen(300, () => console.log("Server started on port 300"));
+
+dotenv.config();
+const PORT = process.env.PORT || 300;
+app.listen(PORT, () =>
+  console.log(`Server  started running ${process.env.NODE_ENV} on port ${PORT}`)
+);
 
 app.get("/", (req, res) => {
   res.send("Hello World");
